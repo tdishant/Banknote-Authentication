@@ -1,0 +1,2 @@
+# Banknote-Authentication
+Machine Learning / Data mining project in python. In this project, various classification algorithms such as Decision Tree,  k-nearest neighbours, random forest and support vector machine have been implemented from scratch and have been applied on banknote authentication dataset. The goal of this project is to calculate and compare the accuracy of these algorithms in differentiating counterfeit bank notes from legitimate notes
