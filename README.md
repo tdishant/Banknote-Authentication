@@ -1,34 +1,69 @@
-#Comparing the accuracy of various Classification Algorithms for Banknote Authentication
+<!-- Output copied to clipboard! -->
 
-##Authors:
-1. Dishant Thakkar
-2. Dev Jariwala
-3. Bhavya Doshi
+<!-----
+NEW: Check the "Suppress top comment" option to remove this info from the output.
+
+Conversion time: 1.489 seconds.
 
 
-**ABSTRACT**
+Using this Markdown file:
+
+1. Paste this output into your source file.
+2. See the notes and action items below regarding this conversion run.
+3. Check the rendered output (headings, lists, code blocks, tables) for proper
+   formatting and use a linkchecker before you publish this page.
+
+Conversion notes:
+
+* Docs to Markdown version 1.0β31
+* Mon Nov 01 2021 07:52:24 GMT-0700 (PDT)
+* Source doc: DM document
+* Tables are currently converted to HTML tables.
+* This document has images: check for >>>>>  gd2md-html alert:  inline image link in generated source and store images to your server. NOTE: Images in exported zip file from Google Docs may not appear in  the same order as they do in your doc. Please check the images!
+
+
+WARNING:
+You have 10 H1 headings. You may want to use the "H1 -> H2" option to demote all headings by one level.
+
+----->
+
+
+
+# Comparing the accuracy of various Classification Algorithms for Banknote Authentication
+
+
+## ABSTRACT
 
 There has been a significant increase in internet accessibility in the recent decade which has the potential to digitize the entire economy of the country. Despite this, physical currency in the form of bank notes remains the primary mode of transaction throughout the world. This has led to some unexpected day to day problems. Because of the massive advancement in printing technology, it has become very easy to produce counterfeit bank notes that look and feel similar to legitimate bank notes which makes it almost impossible to manually differentiate between the two. Thus our project aims at using the data extracted from the images of the bank notes to classify them as legitimate notes or counterfeit notes using certain classification algorithms such as Decision Tree, k-nearest neighbors (KNN), Random Forest and Support Vector Machine (SVM). Our project also compares and displays the accuracy of each algorithm used for the classification of the bank notes.
 
-	For our project we have used the bank note authentication data set. This data set contains data that were extracted from the images that were taken for the evaluation of an authentication procedure for banknotes. Using the wavelet transform tool, certain features were extracted from the images of bank notes. Our job is to apply various classification algorithms on this data set and predict whether the image taken is of legitimate bank note or of counterfeit bank note.
+For our project we have used the bank note authentication data set. This data set contains data that were extracted from the images that were taken for the evaluation of an authentication procedure for banknotes. Using the wavelet transform tool, certain features were extracted from the images of bank notes. Our job is to apply various classification algorithms on this data set and predict whether the image taken is of legitimate bank note or of counterfeit bank note.
 
-	We have used four classification algorithms in our project namely Decision Tree, k-nearest neighbors (for k = 3 and k = 5), Random Forest and Support Vector Machine (SVM). After implementing the above algorithms and calculating their accuracy for our dataset, we found that the Decision Tree classifier had the highest accuracy (99.27%) whereas Support Vector Machine had the least accuracy (41.82%).
+We have used four classification algorithms in our project namely Decision Tree, k-nearest neighbors (for k = 3 and k = 5), Random Forest and Support Vector Machine (SVM). After implementing the above algorithms and calculating their accuracy for our dataset, we found that the Decision Tree classifier had the highest accuracy (99.27%) whereas Support Vector Machine had the least accuracy (41.82%).
 
-	The main objective of undertaking this project is to implement some of the popular classification algorithms from scratch and identify the best algorithm that can be used to accurately differentiate counterfeit bank notes from legitimate notes.
-
-
-
-**INDEX**
-
-
-[TOC]
+The main objective of undertaking this project is to implement some of the popular classification algorithms from scratch and identify the best algorithm that can be used to accurately differentiate counterfeit bank notes from legitimate notes.
 
 
 
-# 
+## INDEX
 
+### 1.  INTRODUCTION
+### 2.  DATASET
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Table 1. Dataset Description
+### 3.  ARCHITECTURE
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;K - Nearest Neighbours Classifier:
+   
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Random Forest Classifier:
+   
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Input and Output of learning models:
+### 4.  EXPERIMENT
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Google Colab Link:
+   
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Github Code Link:
+### 5.  RESULT
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Table 2. Algorithms and their Accuracies
+### 6.  CONCLUSION	
 
-# 1.  INTRODUCTION
+## 1.  INTRODUCTION
 
 Despite the recent surge in the number of internet users in the country which is mainly attributed to the availability of cheap and affordable quality internet, the number of people utilizing the facility of online money transactions is trivial. Thus, exchange of physical currency in the form of bank notes remains the primary mode of transaction. With the advancements in printing technology it has become fairly simple to print counterfeit currency which looks and feels exactly similar to the legitimate ones. This has made it almost impossible to tell apart a counterfeit note from a real one manually just by looking at them. This has created a need for development of data mining models which can extract some important features from these bank notes and apply various classification algorithms on them to differentiate the legitimate notes from the counterfeit ones.
 
@@ -37,12 +72,12 @@ These models can be installed at various places where the inflow of currency is 
 Finally, the aim of our project is to apply various supervised learning algorithms like decision tree, k-nearest neighbours, random forest and support vector machine on the given dataset to calculate and compare the accuracy of each of the following algorithms in classifying the bank notes as genuine or forged in order to find the best classification algorithm that can be used in our model to solve our problem.    
 
 
-# 2.  DATASET
+## 2.  DATASET
 
 The dataset that we have used in our project is the [banknote authentication data set taken from the UCI machine learning repository](https://archive.ics.uci.edu/ml/datasets/banknote+authentication). This dataset was created by capturing the images of genuine as well as forged banknote-like specimens using an industry grade print inspection camera. The features (like variance of Wavelet Transformed image, skewness of Wavelet Transformed image, curtosis of Wavelet Transformed image and entropy of image) were extracted from these photos by using various Wavelet Transform Tools. The dataset consists of 5 attributes in total where the first four attributes are the extracted features namely: variance of Wavelet Transformed image, skewness of Wavelet Transformed image, curtosis of Wavelet Transformed image and entropy of image and the fifth attribute is the target class which has two class labels 0 (represents genuine notes) and 1 (represents forged notes). The dataset has 1372 instances in total out of which instances 1 to 762 belong to class 0 and instances 763 to 1372 belong to class 1. Thus, the legit:counterfeit ratio in the dataset is 56:44.
 
 
-## **Table 1. Dataset Description**
+### **Table 1. Dataset Description**
 
 
 <table>
@@ -98,20 +133,11 @@ The dataset that we have used in our project is the [banknote authentication dat
 
 
 
-# 3.  ARCHITECTURE
+## 3.  ARCHITECTURE
 
+### **K - Nearest Neighbours Classifier:**
 
-## **K - Nearest Neighbours Classifier:**
-
-
-
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image1.png "image_tooltip")
-
-
-
+![KNN_Bock_Diagram drawio](https://user-images.githubusercontent.com/81166187/139694345-d25e8802-a4e3-439f-adad-57f3502fc934.png)
 
 * Split the dataset into training and testing dataset.
 * Use the training dataset to train our KNN Classifier.
@@ -122,21 +148,9 @@ The dataset that we have used in our project is the [banknote authentication dat
 * Finally, match the predicted label with the actual label for all the instances in the testing dataset and print the accuracy of the model
 
 
-# 
+### **Random Forest Classifier:**
 
-
-## **Random Forest Classifier:**
-
-
-# 
-
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image2.png "image_tooltip")
-
-
-
+![KNN_Bock_Diagram-Page-2 drawio](https://user-images.githubusercontent.com/81166187/139694481-f4048575-a7d8-4dcc-b66a-499b36536cf9.png)
 
 * Split the dataset into training and testing dataset.
 * Create 3 (for k = 3) Decision tree objects and call the bootstrap_sample method.
@@ -147,10 +161,7 @@ The dataset that we have used in our project is the [banknote authentication dat
 * Out of the three predicted labels, return the most common label as our prediction.
 * Finally, match the predicted label with the actual label for all the instances in the testing dataset and print the accuracy of the model.
 
-
-## **Input and Output of learning models:**
-
-
+### **Input and Output of learning models:**
 
 1. Decision Tree Classifier:
 * <span style="text-decoration:underline;">Input:</span> Banknote Authentication Dataset, maximum depth of the tree
@@ -165,13 +176,7 @@ The dataset that we have used in our project is the [banknote authentication dat
 * Input: Banknote Authentication Dataset
 * <span style="text-decoration:underline;">Output</span>: Accuracy (in %) of the model in differentiating fake notes from legitimate notes. 
 
-
-# 
-
-
-# 4.  EXPERIMENT
-
-
+## 4.  EXPERIMENT
 
 * In our project, we have implemented four different classification algorithms (Decision Tree, KNN, Random Forest, Support Vector Machine) from scratch.
 * The Decision Tree algorithm has been implemented with the following parameters: maximum depth of the tree is 10, information gain is calculated using Entropy of the nodes and minimum number of samples required to split the tree is 2.
@@ -179,18 +184,12 @@ The dataset that we have used in our project is the [banknote authentication dat
 * The Random Forest algorithm has been implemented with the following parameters: number of decision trees to be constructed is 3, maximum depth of each tree is 10, information gain is calculated using Entropy of the nodes, minimum number of samples required to split the tree is 2, taking same instance of training dataset more than once to create a random subset training dataset is allowed.
 * The Support Vector Machine algorithm has been implemented with the following parameters: the learning rate is 0.001, the lambda parameter is 0.01 and the number of iterations are 1000.
 * Finally, the accuracy of all these algorithms are calculated and displayed in a tabular fashion for easy comparison.
-* **Google Colab Link:**
+### * **Google Colab Link:**
 
-    [https://drive.google.com/file/d/1wCDpxZA3qXIGJSI2_k30U-iSoD1AHkHh/view?usp=sharing](https://drive.google.com/file/d/1wCDpxZA3qXIGJSI2_k30U-iSoD1AHkHh/view?usp=sharing)
-
-* **Github Code Link:**
-
-[https://github.com/tdishant/Banknote-Authentication](https://github.com/tdishant/Banknote-Authentication)
+[https://drive.google.com/file/d/1wCDpxZA3qXIGJSI2_k30U-iSoD1AHkHh/view?usp=sharing](https://drive.google.com/file/d/1wCDpxZA3qXIGJSI2_k30U-iSoD1AHkHh/view?usp=sharing)
 
 
-# 5.  RESULT
-
-
+## 5.  RESULT
 
 * Upon implementation of 4 different classification algorithms from scratch and comparing their accuracies in classifying a banknote as legitimate or counterfeit, we achieved the following result:
 * The most accurate classification algorithm for the given dataset was the Decision Tree Classifier with an accuracy of 99.27%.
@@ -200,7 +199,7 @@ The dataset that we have used in our project is the [banknote authentication dat
 * And the worst performing algorithm for the given dataset was the Support Vector Machine having an accuracy of only 41.82%.
 
 
-## **Table 2. Algorithms and their Accuracies**
+### **Table 2. Algorithms and their Accuracies**
 
 
 <table>
@@ -258,15 +257,12 @@ The dataset that we have used in our project is the [banknote authentication dat
 
 
 
-# 6.  CONCLUSION
+## 6.  CONCLUSION
 
 In our project, we have implemented four different classification algorithms from scratch namely: Decision Tree Classifier, K-Nearest Neighbours Classifier, Random Forest Classifier and Support Vector Machine Classifier and calculated the accuracies of each algorithm on the banknote authentication dataset.
 
-	After analyzing the accuracies of these algorithms in differentiating the counterfeit notes from the legitimate ones, we conclude that that Decision Tree Classifier is the best algorithm with an accuracy of  99.27% and Support Vector Machine is the worst algorithm having an accuracy of 41.82% for the given dataset.
+After analyzing the accuracies of these algorithms in differentiating the counterfeit notes from the legitimate ones, we conclude that that Decision Tree Classifier is the best algorithm with an accuracy of  99.27% and Support Vector Machine is the worst algorithm having an accuracy of 41.82% for the given dataset.
 
 Thus, Wavelet Transform Tool along with Decision Tree Classifier can be used to create a model which can accurately predict a given note as legitimate or counterfeit. Hence, this model can be installed at various places where the inflow of currency is high, for example: banks, ATM’s, vending machines, malls etc. which could help in minimizing the circulation of counterfeit notes in the market to a great extent.
 
-	In future, this work can be extended by implementing some of the other classification algorithms apart from the ones already implemented in this project or by varying some of the parameters for the above implemented algorithms so as to achieve higher accuracy.
-
-
-    ** **
+In future, this work can be extended by implementing some of the other classification algorithms apart from the ones already implemented in this project or by varying some of the parameters for the above implemented algorithms so as to achieve higher accuracy.
